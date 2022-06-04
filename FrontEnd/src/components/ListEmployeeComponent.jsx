@@ -48,7 +48,7 @@ class ListEmployeeComponent extends Component {
             <div>
                 <h2 className='text-center'>Employee List</h2>
                 <div>
-                    <button class="btn btn-primary" onClick={this.addEmployee}>Add Employee</button>
+                    <button class="btn btn-primary row" onClick={this.addEmployee}>Add Employee</button>
                 </div>
                 <div className='row'>
                     <table className="table table-striped table-bordered">

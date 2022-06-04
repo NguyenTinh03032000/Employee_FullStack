@@ -1,12 +1,8 @@
 package com.employee.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -34,4 +30,9 @@ public class Employee {
 	
 	@Column(name = "email")
 	private String email;
+
+	@JsonIgnore
+	@ManyToOne
+	@JoinColumn(name = "id_department")
+	private Department department;
 }

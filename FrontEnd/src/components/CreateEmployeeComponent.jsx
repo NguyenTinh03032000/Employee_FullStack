@@ -7,7 +7,7 @@ class CreateEmployeeComponent extends Component {
         this.state = {
             firstName: '',
             lastName: '',
-            email: ''
+            email: '',
         }
         this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
         this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
@@ -42,6 +42,7 @@ class CreateEmployeeComponent extends Component {
     cancel() {
         this.props.history.push('/employees');
     }
+
 
     render() {
         return (
